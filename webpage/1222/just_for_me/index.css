@@ -1,0 +1,165 @@
+div, img, html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#main_canvas {
+  width: 100vw;
+  height: 100vh;
+}
+
+.balloon_img {
+  width: 380px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#count_balloons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#count_balloons .balloon {
+  margin-right: 36px;
+  font-size: 24px;
+  color: white;
+  font-weight: 100;
+  margin-left: 38px;
+  margin-bottom: -12px;
+  padding: 0;
+}
+
+.count_time {
+  width: 200px;
+  height: 80px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: rgba(255, 255, 255, 0.4);
+  line-height: 80px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hub {
+  text-align: center;
+}
+
+.hub img {
+  width: 1000px;
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.hub .choose {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 5px solid red;
+  position: absolute;
+  display: none;
+}
+
+.meter {
+  width: 160px;
+  height: 240px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.meter .meter_value {
+  width: 72px;
+  height: 0px;
+  background-color: orange;
+  position: absolute;
+  left: 45px;
+  bottom: 20px;
+}
+
+.meter .meter_border {
+  width: 80px;
+  height: 200px;
+  border: 1px solid black;
+  position: absolute;
+  left: 40px;
+  bottom: 20px;
+}
+
+.check_sensor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.check_sensor .sensor {
+  width: 80px;
+  height: 260px;
+  background-color: rgba(255, 170, 170, 0.4);
+  margin-right: 30px;
+}
+
+.check_sensor .sensor_value {
+  width: 60px;
+  height: 20px;
+  background-color: orangered;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+#game_over {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: none;
+}
+
+#game_over h1 {
+  font-size: 60px;
+  padding-top: 300px;
+  margin: 0;
+}
+
+#game_over button {
+  width: 120px;
+  height: 30px;
+  border: 1px solid white;
+  font-weight: 900;
+}
+
+#game_clear {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: none;
+}
+
+#game_clear h1 {
+  font-size: 60px;
+  padding-top: 300px;
+  margin: 0;
+}
+
+#game_clear button {
+  width: 120px;
+  height: 30px;
+  border: 1px solid white;
+  font-weight: 900;
+}
+/*# sourceMappingURL=index.css.map */

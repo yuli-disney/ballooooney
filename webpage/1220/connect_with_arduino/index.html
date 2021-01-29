@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- とりあえず、blenderからとったデータを表示できるようになったところ、ボタンを押してアニメーションを開始するところを作ろうとしているところ、とりあえずはできなそう -->
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="index.css">
+    <!-- three.jsを読み込む -->
+    <script src="js/threejs/three.min.js"></script>
+    <script src="js/threejs/GLTFLoader.js"></script>
+    <script src="js/threejs/OrbitControls.js"></script>
+    <!-- index.jsを読み込む -->
+    
+    
+    <script src="js/index.js"></script>
+</head>
+<body>
+<div id="main_canvas">
+    <canvas id="canvas" width="100%" height="100%"></canvas>
+</div>
+<img class="balloon_img" src="assets/count_balloons.png" alt="">
+<div id="count_balloons">
+    <div class="balloon">
+        <p id="pink_balloons">0</p>
+    </div>
+    <div class="balloon">
+        <p id="blue_balloons">0</p>
+    </div>
+    <div class="balloon">
+        <p id="green_balloons">0</p>
+    </div>
+    <div class="balloon">
+        <p id="yellow_balloons">0</p>
+    </div>
+</div>
+<div id="count_time" class="count_time"></div>
+<div class="hub">
+    <img id="first_floor_map" src="assets/first_floor_map.png" alt="">
+    <img id="second_floor_map" src="assets/second_floor_map.png" alt="">
+    <img id="third_floor_map" src="assets/third_floor_map.png" alt="">
+    <div class="third_floor">
+        <div id="choose_1" class="third choose"></div>
+        <div id="choose_2" class="third choose"></div>
+        <div id="choose_3" class="third choose"></div>
+        <div id="choose_4" class="third choose"></div>
+        <div id="choose_5" class="third choose"></div>
+        <div id="choose_6" class="third choose"></div>
+    </div>
+    <div class="second_floor">
+        <div id="choose_7" class="second choose"></div>
+        <div id="choose_8" class="second choose"></div>
+        <div id="choose_9" class="second choose"></div>
+    </div>
+    <div class="first_floor">
+        <div id="choose_10" class="first choose"></div>
+        <div id="choose_11" class="first choose"></div>
+        <div id="choose_12" class="first choose"></div>
+        <div id="choose_13" class="first choose"></div>
+        <div id="choose_14" class="first choose"></div>
+    </div>
+    <div id="center" class="choose"></div>
+</div>
+<div class="meter">
+    <div id="meter_value" class="meter_value"></div>
+    <div class="meter_border"></div>
+</div>
+<div id="game_over">
+    <h1>GAME OVER</h1>
+    <button>PLAY AGAIN</button>
+</div>
+<div id="game_clear">
+    <h1>GAME CLEAR</h1>
+    <button>PLAY AGAIN</button>
+</div>
+<script src="js/position.js"></script>
+<script src="js/meter.js"></script>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.753.0.min.js"></script>
+<script src="js/sensor.js"></script>
+<script src="js/count_time.js"></script>
+</body>
+</html>
